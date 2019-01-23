@@ -1,0 +1,99 @@
+/* RESET AND SOME DEFAULT STUFF */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+    --primary-color: #0A85E9;
+    --darker-blue: #0A70D2;
+    --grey: #969696;
+    --red-color: #FF594F;
+}
+.app-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* MAIN HEADING */
+.main-heading {
+    font-size: 5rem;
+    letter-spacing: -0.025em;
+    text-align: center;
+}
+.main-heading--blue {
+    color: var(--primary-color);
+}
+
+/* FORM */
+.form-row {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto 20px auto;
+}
+.form-label, .form-input, .form-button {
+    width: 100%;
+}
+.form-label {
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+.form-input {
+    padding: 5px 10px;
+    font-size: 2rem;
+    border: 2px solid var(--primary-color);
+    outline: none;
+}
+.form-button {
+    padding: 10px 0;
+    margin-bottom: 50px;
+    background-color: var(--primary-color);
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    transition: all 0.25s linear;
+}
+.form-button:hover {
+    cursor: pointer;
+    background-color: var(--darker-blue);
+}
+
+/* BOOK LIST */
+.books-table {
+    width: 70%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-top: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+.books-table__head tr {
+    border-bottom: 2px solid var(--primary-color);
+}
+.books-table__head tr th {
+    padding: 5px 0;
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: var(--grey);
+}
+.books-table__body tr {
+    border-bottom: 1px solid var(--grey);
+}
+.books-table__body tr td {
+    padding: 5px 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.delete-button {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+    background-color: var(--red-color);
+    border-radius: 20%;
+}

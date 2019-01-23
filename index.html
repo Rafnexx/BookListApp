@@ -7,10 +7,63 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MyBookList App</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<script src="/js/app.js"></script>
+  <div class="app-wrapper">
+    <h1 class="main-heading">
+      <i class="fas fa-book-open main-heading--blue"></i>
+      My<span class="main-heading--blue">Book</span>List
+    </h1>
+    <form id="book-form">
+      <div class="form-row">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" id="title" name="title" class="form-input">
+      </div>
+      <div class="form-row">
+        <label for="author" class="form-label">Author</label>
+        <input type="text" id="author" name="author" class="form-input">
+      </div>
+      <div class="form-row">
+        <label for="date" class="form-label">Publication Date</label>
+        <input type="date" id="date" name="date" class="form-input">
+      </div>
+      <div class="form-row">
+        <label for="isbn" class="form-label">ISBN#</label>
+        <input type="text" id="isbn" name="isbn" class="form-input">
+      </div>
+      <div class="form-row">
+        <input type="submit" value="Add Book" class="form-button">
+      </div>
+    </form>
+    <table class="books-table">
+      <thead class="books-table__head">
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Publication Date</th>
+          <th>ISBN#</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="book-list" class="books-table__body">
+        <tr>
+          <td>Harry Potter and Chamber of Secrets</td>
+          <td>Jane K. Rowling</td>
+          <td>10.02.2010</td>
+          <td>412314123123</td>
+          <td><a href="#" class="delete-button delete">X</a></td>
+        </tr>
+        <tr>
+          <td>Harry Potter and Chamber of Secrets</td>
+          <td>Jane K. Rowling</td>
+          <td>10.02.2010</td>
+          <td>412314123123</td>
+          <td><a href="#" class="delete-button delete">X</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<script src="js/app.js"></script>
 </body>
 </html>
