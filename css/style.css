@@ -95,5 +95,21 @@ html {
     font-size: 2rem;
     color: #fff;
     background-color: var(--red-color);
-    border-radius: 20%;
+    border-radius: 10%;
+}
+
+/* ALERTS */
+div.success, div.error {
+    width: 70%;
+    margin: 10px auto;
+    padding: 10px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+div.success {
+    background-color: darkgreen;
+}
+div.error {
+    background-color: crimson;
 }
